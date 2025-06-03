@@ -1,0 +1,89 @@
+.list-group-item {
+    background-color: rgb(142, 99, 185); /* Чуть светлее app-info */
+    color: rgb(242, 222, 243);
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+    margin-top: 15px;
+}
+
+.list-group-item:hover {
+    transform: scale(1.02);
+    background-color: rgb(152, 109, 195);
+}
+
+.list-group-item-label {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.list-group-item-input {
+    width: 80px;
+    text-align: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.list-group-item-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-cookie, .btn-trash {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn-cookie {
+    color: rgb(255, 193, 7);
+}
+
+.btn-cookie:hover {
+    color: rgb(255, 165, 0);
+}
+
+.btn-trash {
+    color: rgb(255, 70, 70);
+}
+
+.btn-trash:hover {
+    color: rgb(255, 0, 0);
+}
+
+.fa-star {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.fa-star:hover {
+    color: gold;
+}
+
+.list-group-item.like .fa-star {
+    color: gold;
+}
+
+.list-group-item.increase .list-group-item-label,
+.list-group-item.increase .list-group-item-input {
+    color: rgb(183, 255, 142);
+}
